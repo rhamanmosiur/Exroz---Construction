@@ -1,0 +1,285 @@
+/* (Extra large devices: large desktops,1200px and up) 
+XL Device :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+
+/* (Large devices: desktops,992px and up) 
+LG Device :992px. */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* (Medium devices: tablets,768px and up) 
+MD Device :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* header navbar start */
+    .logo {
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    .cell {
+        display: none;
+    }
+    .nav-open,
+    .nav-close {
+        color: #fff;
+        background-color: #F7A30A;
+        font-size: 25px;
+        padding: 5px 15px;
+        right: 0;
+    }
+    button.navbar-toggler {
+        padding: 0;
+    }
+    .navbar-nav .nav-link {
+        background-color: #F7A30A;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        padding: 10px 10px !important;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #F7A30A;
+        background: #fff;
+    }
+    .active {
+        color: #F7A30A;
+        background: #fff;
+    }
+    .navbar-nav li:last-child .nav-link {
+        border-bottom: none;
+    }
+    ul.navbar-nav {
+        margin-top: 8px;
+        width: 50%;
+    }
+    /* header navbar end */
+    .home-content h4 {
+        font-size: 22px;
+    }
+    .home-content h1 {
+        font-size: 50px;
+        margin: 10px 0;
+    }
+    .home-content p {
+        font-size: 15px;
+    }
+    .section-title h3 {
+        font-size: 35px;
+    }
+    .section-title h5 {
+        font-size: 16px;
+    }
+}
+
+
+/* (Small devices: landscape phones, 576px and up) 
+SM Small Device :576px. */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+    /* header navbar start */
+    .logo {
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    .cell {
+        display: none;
+    }
+    .nav-open,
+    .nav-close {
+        color: #fff;
+        background-color: #F7A30A;
+        font-size: 25px;
+        padding: 5px 15px;
+        right: 0;
+    }
+    button.navbar-toggler {
+        padding: 0;
+    }
+    .navbar-nav .nav-link {
+        background-color: #F7A30A;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        padding: 10px 10px !important;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #F7A30A;
+        background: #fff;
+    }
+    .active {
+        color: #F7A30A;
+        background: #fff;
+    }
+    .navbar-nav li:last-child .nav-link {
+        border-bottom: none;
+    }
+    ul.navbar-nav {
+        margin-top: 8px;
+        width: 50%;
+    }
+    /* header navbar end */
+    .home-content h4 {
+        font-size: 20px;
+    }
+    .home-content h1 {
+        font-size: 48px;
+        margin: 10px 0;
+    }
+    .home-content p {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .section-title h3 {
+        font-size: 30px;
+    }
+    .section-title p {
+        font-size: 16px
+    }
+    .section-title p br {
+        display: none;
+    }
+    .service-item {
+        margin-bottom: 25px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (min-width: 300px) and (max-width: 575px) {
+    /* ==== */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    p {
+        font-size: 16px;
+        letter-spacing: .5px;
+    }
+    .logo {
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    .cell {
+        display: none;
+    }
+    .nav-open,
+    .nav-close {
+        color: #fff;
+        background-color: #F7A30A;
+        font-size: 25px;
+        padding: 5px 15px;
+        right: 0;
+    }
+    button.navbar-toggler {
+        padding: 0;
+    }
+    .navbar-nav .nav-link {
+        background-color: #F7A30A;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        padding: 10px 10px !important;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #F7A30A;
+        background: #fff;
+    }
+    .active {
+        color: #F7A30A;
+        background: #fff;
+    }
+    .navbar-nav li:last-child .nav-link {
+        border-bottom: none;
+    }
+    ul.navbar-nav {
+        margin-top: 8px;
+        width: 50%;
+    }
+    /* ==== */
+    .home {
+        padding: 90px 0 60px 0;
+    }
+    .home-content h4 {
+        font-size: 20px;
+    }
+    .home-content h1 {
+        font-size: 35px;
+        margin: 10px 0;
+    }
+    .home-content p {
+        font-size: 16px;
+        font-weight: 200;
+    }
+    .home-content p br {
+        display: none;
+    }
+    .home-content button {
+        margin: 5px;
+    }
+    /* ==== */
+    .section-title {
+        text-align: center;
+        /* padding: 0 2px 30px 2px; */
+        padding-bottom: 30px;
+    }
+    .section-title h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .section-title p {
+        font-size: 16px
+    }
+    .section-title p br {
+        display: none;
+    }
+    /* ==== */
+    .section-padding-top {
+        padding-top: 60px;
+        /* padding-left: 5px; */
+    }
+    .section-padding-bottom {
+        padding-bottom: 60px;
+        /* padding-right: 5px; */
+    }
+    /* ==== */
+    .about-full {
+        padding: 0;
+    }
+    .service-item {
+        margin-bottom: 25px;
+    }
+    .work .section-title {
+        padding: 60px 5px;
+    }
+    /* ==== */
+    .features-icon i {
+        font-size: 22px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+    .features-right {
+        max-width: 93%;
+    }
+    .features-right:after {
+        height: 100%;
+        width: 90%;
+        left: 50px;
+        top: 50px;
+    }
+    /* ==== */
+    footer {
+        padding: 50px 10px 0 10px;
+    }
+}

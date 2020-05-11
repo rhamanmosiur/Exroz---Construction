@@ -1,0 +1,653 @@
+/* ====================================================
+  Template Name: WordPress Fair HTML5 landing page
+  Template URI: http://dreamroadtech.com/templates/morix-preview/
+  Description: WordPress Fair HTML5 landing page
+  Author: Rhaman Mosiur
+  Author URI: http://www.abcitpark.com
+  version: 1.0
+==================================================== */
+
+
+/* CSS Index
+------------------------------------
+
+01. Template Default CSS 
+02. header css
+
+
+
+
+
+
+*/
+
+
+/* ====================================================
+  Google Fonts
+==================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:300,400,500,700&display=swap');
+
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    line-height: 32px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+li a {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.section-padding-top {
+    padding-top: 120px;
+}
+
+.section-padding-bottom {
+    padding-bottom: 120px;
+}
+
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+
+/* ..................................
+ 02. header css 
+.................................. */
+
+header {
+    color: white;
+}
+
+header.neel {
+    background-color: #021E39;
+    opacity: .9;
+    transition: .3s;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 35px;
+    background-color: #f7a30a;
+    padding: 10px 20px;
+}
+
+.cell {
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+header ul li a {
+    position: relative;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 0 10px !important;
+    transition: .3s;
+    margin: 0 10px;
+}
+
+header ul li a:hover {
+    color: #f7a30a;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.active {
+    color: #f7a30a;
+    font-weight: 600;
+}
+
+header ul li a::before {
+    content: '';
+    bottom: -10px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: #f7a30a;
+    position: absolute;
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+header ul li:hover a::before {
+    opacity: 1;
+    transition: .5s;
+    transform: scaleX(1);
+}
+
+
+/* ..................................
+03. home CSS 
+.................................. */
+
+.home {
+    background-image: url(../img/bg-intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 180px 0 130px 0;
+}
+
+.home:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(3, 6, 28, 0.7), rgba(3, 6, 28, 0.9));
+    z-index: -1;
+}
+
+.home-content h4 {
+    color: #f7a30a;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.home-content h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.home-content p {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.home button {
+    margin-top: 30px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 30px;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.btn-lrn {
+    background: #f7a30a;
+    border: 3px solid #f7a30a;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-lrn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-lrn:hover:before {
+    width: 100%;
+}
+
+.btn-lrn:hover {
+    color: #000;
+    border: 3px solid #fff;
+}
+
+.btn-ctc {
+    background: transparent;
+    border: 3px solid #fff;
+    margin-left: 10px;
+    position: relative;
+}
+
+.btn-ctc::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-ctc:hover:before {
+    width: 100%;
+}
+
+.btn-ctc:hover {
+    color: #000;
+}
+
+
+/* ..................................
+04. about CSS 
+.................................. */
+
+.section-title {
+    padding-bottom: 50px;
+}
+
+.section-title h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #111;
+    text-transform: capitalize;
+}
+
+.section-title h3 span {
+    color: #f7a30a;
+}
+
+.section-title h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.about-full {
+    background-color: #fff;
+    padding: 0 30px 40px 30px;
+}
+
+.about {
+    position: relative;
+    z-index: 1;
+}
+
+.about:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 240px;
+    width: 100%;
+    background-color: #f7a30a;
+    z-index: -1;
+}
+
+.about-left p {
+    padding-bottom: 20px;
+}
+
+.about-left li {
+    display: block;
+    padding: 0 0 15px 30px;
+    position: relative;
+}
+
+.about-left li:before {
+    content: '\f00c';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.about-img img {
+    margin-top: 35px;
+}
+
+
+/* ..................................
+05. service CSS 
+.................................. */
+
+.service {
+    background-color: #f5f3fd;
+}
+
+.service-item {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.service-item i {
+    font-size: 55px;
+    color: #f7a30a;
+    padding-bottom: 15px;
+}
+
+.service-item h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.s-item-2 {
+    background-color: #f7a30a;
+    color: #fff;
+}
+
+.s-item-2 i {
+    color: #fff;
+}
+
+
+/* ..................................
+06. work CSS 
+.................................. */
+
+.work .section-title {
+    background-color: #111;
+    padding: 80px 0;
+}
+
+.work .section-title h3,
+.work .section-title p {
+    color: #fff;
+}
+
+.work-item {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    display: table;
+    cursor: pointer;
+}
+
+.work-item-1 {
+    background-image: url(../img/work/work1.jpg);
+}
+
+.work-item-2 {
+    background-image: url(../img/work/work2.jpg);
+}
+
+.work-item-3 {
+    background-image: url(../img/work/work3.jpg);
+}
+
+.work-item-4 {
+    background-image: url(../img/work/work4.jpg);
+}
+
+.work-item-5 {
+    background-image: url(../img/work/work5.jpg);
+}
+
+.work-item-6 {
+    background-image: url(../img/work/work6.jpg);
+}
+
+.work-item-content {
+    color: #fff;
+    background: #f7a30a;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.work-item:hover .work-item-content {
+    opacity: 1;
+}
+
+
+/* ..................................
+07. features CSS 
+.................................. */
+
+.features-left h4 {
+    font-size: 24px;
+    padding-bottom: 14px;
+    color: #111;
+}
+
+.features-left p {
+    padding-bottom: 30px;
+}
+
+.features-left {
+    display: table;
+}
+
+.features-icon {
+    display: table-cell;
+}
+
+.features-details {
+    display: table-cell;
+    padding: 15px 0 0 30px;
+}
+
+.features-icon i {
+    font-size: 30px;
+    background: #021D38;
+    color: #F7A30A;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.features-details h4 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-top: -21px;
+}
+
+.features-right img {
+    max-width: 90%;
+}
+
+.features-right {
+    position: relative;
+    z-index: 1;
+}
+
+.features-right:after {
+    content: '';
+    position: absolute;
+    height: 95%;
+    width: 85%;
+    background: #F7A40A;
+    left: 90px;
+    top: 90px;
+    z-index: -1;
+}
+
+
+/* ..................................
+08. blog CSS 
+.................................. */
+
+.blog {
+    background-color: #F5F3FD;
+}
+
+.blog-item {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.blog-img-wrap {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-img {}
+
+.blog-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F7A30A;
+    cursor: pointer;
+}
+
+.blog-img:hover {}
+
+.blog-img:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.blog-img-1 {
+    background-image: url(../img/blog/blog1.jpg);
+}
+
+.blog-img-2 {
+    background-image: url(../img/blog/blog2.jpg);
+}
+
+.blog-img-3 {
+    background-image: url(../img/blog/blog3.jpg);
+}
+
+.blog-details {
+    padding: 30px;
+}
+
+.blog-details h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.blog-details span {
+    opacity: .7;
+    padding-bottom: 5px;
+    display: block;
+}
+
+
+/* ..................................
+09. footer CSS 
+.................................. */
+
+footer {
+    background-color: #021E39;
+}
+
+.footer-list {
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.footer-list p {
+    color: #fff;
+    opacity: .7;
+    text-transform: capitalize;
+}
+
+.footer-list .logo {
+    background: none;
+    padding: 0 0 10px 0;
+    color: #f7a30a;
+    display: block;
+    margin-top: -9px;
+}
+
+.footer-list h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.footer-list ul li {
+    display: block;
+    padding-bottom: 18px;
+    opacity: .7;
+    display: table;
+}
+
+.footer-list li a {
+    text-transform: capitalize;
+}
+
+.footer-list ul li i {
+    padding-right: 14px;
+    display: table-cell;
+}
+
+.copyright {
+    padding: 30px 0;
+    border-top: 1px solid #253d55;
+    text-align: center;
+}
+
+.copyright p {
+    color: #EEEEEE;
+}
